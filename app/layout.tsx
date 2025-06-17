@@ -39,6 +39,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: "/images/gorillalogops.png", // favicon utama
+    shortcut: "/images/gorillalogops.png", // favicon shortcut
+    apple: "/images/gorillalogops.png", // apple touch icon (untuk iOS)
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -47,6 +52,14 @@ export const metadata: Metadata = {
     description:
       "Professional Front End Developer specializing in React, Next.js, Node.js, and modern web technologies.",
     siteName: "Gorilla Workout Portfolio",
+    images: [
+      {
+        url: "/images/gorillalogops.png",
+        width: 800,
+        height: 600,
+        alt: "Gorilla Workout Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -54,6 +67,7 @@ export const metadata: Metadata = {
     description:
       "Professional Front End Developer specializing in React, Next.js, Node.js, and modern web technologies.",
     creator: "@gorillaworkout",
+    images: ["/images/gorillalogops.png"],
   },
   robots: {
     index: true,
@@ -68,8 +82,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'gorillaworkout'
+  generator: "gorillaworkout",
 }
+
 
 export default function RootLayout({
   children,

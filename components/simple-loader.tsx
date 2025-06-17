@@ -43,10 +43,10 @@ export function SimpleLoader({ progress = 0 }: SimpleLoaderProps) {
         <div className="space-y-4">
           <h1 className="text-6xl md:text-8xl font-bold">
             <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-              Gorilla
+              GorillaWorkout
             </span>
           </h1>
-          <h2 className="text-3xl md:text-4xl font-light text-white/80">Workout</h2>
+          <h2 className="text-3xl md:text-4xl font-light text-white/80"></h2>
         </div>
 
         <div className="space-y-6 mt-16">

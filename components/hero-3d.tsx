@@ -60,7 +60,7 @@ export function Hero3D() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="text-center z-10">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white">
-            Gorilla Workout
+            GorillaWorkout
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl">
             Full Stack Developer crafting modern web experiences
