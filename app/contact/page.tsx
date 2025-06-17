@@ -52,8 +52,8 @@ export default function Contact() {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      value: "+62 123 456 7890",
-      href: "tel:+621234567890",
+      value: "+6287700600208",
+      href: "tel:+6287700600208",
     },
     {
       icon: <MessageCircle className="h-6 w-6" />,

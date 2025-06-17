@@ -41,7 +41,7 @@ export function SimpleLoader({ progress = 0 }: SimpleLoaderProps) {
 
       <div className="text-center space-y-8 relative z-10">
         <div className="space-y-4">
-          <h1 className="text-6xl md:text-8xl font-bold">
+          <h1 className="text-4xl md:text-6xl font-bold">
             <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
               GorillaWorkout
             </span>

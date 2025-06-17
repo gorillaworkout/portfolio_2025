@@ -5,7 +5,7 @@ export function sendToWhatsApp(formData: {
   subject: string
   message: string
 }) {
-  const phoneNumber = "6281234567890" // Replace with your WhatsApp number (with country code, no + or spaces)
+  const phoneNumber = "6287700600208" // Replace with your WhatsApp number (with country code, no + or spaces)
 
   const message = `*New Contact Form Submission*
 
@@ -26,7 +26,7 @@ Sent from Gorilla Workout Portfolio Website`
   window.open(whatsappUrl, "_blank")
 }
 
-export function createWhatsAppLink(message: string, phoneNumber = "6281234567890") {
+export function createWhatsAppLink(message: string, phoneNumber = "6287700600208") {
   const encodedMessage = encodeURIComponent(message)
   return `https://wa.me/${phoneNumber}?text=${encodedMessage}`
 }

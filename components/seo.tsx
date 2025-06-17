@@ -85,7 +85,7 @@ export function SEO({
       addressCountry: "Indonesia",
     },
     email: "contact@gorillaworkout.id",
-    telephone: "+62-123-456-7890",
+    telephone: "+62-87700600208",
   }
 
   return (
