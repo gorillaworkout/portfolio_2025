@@ -46,8 +46,8 @@ export default function Contact() {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      value: "contact@gorillaworkout.id",
-      href: "mailto:contact@gorillaworkout.id",
+      value: "darmawanbayu1@gmail.com",
+      href: "mailto:darmawanbayu1@gmail.com",
     },
     {
       icon: <Phone className="h-6 w-6" />,
@@ -58,8 +58,8 @@ export default function Contact() {
     {
       icon: <MessageCircle className="h-6 w-6" />,
       title: "WhatsApp",
-      value: "+62 123 456 7890",
-      href: "https://wa.me/6281234567890",
+      value: "+6287700600208",
+      href: "https://wa.me/6287700600208",
     },
     {
       icon: <MapPin className="h-6 w-6" />,

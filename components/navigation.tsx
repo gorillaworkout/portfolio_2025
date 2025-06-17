@@ -51,7 +51,7 @@ export function Navigation() {
               <Sparkles className="h-3 w-3 text-white/60 absolute -top-1 -right-1" />
             </div>
             <span className="text-lg font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-              Gorilla
+              GW
             </span>
           </Link>
           <div className="hidden md:flex items-center space-x-1">
@@ -91,7 +91,7 @@ export function Navigation() {
               <Sparkles className="h-3 w-3 text-white/60 absolute -top-1 -right-1 group-hover:scale-125 transition-transform duration-300" />
             </div>
             <span className="text-lg font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-              Gorilla
+              GW
             </span>
           </Link>
 

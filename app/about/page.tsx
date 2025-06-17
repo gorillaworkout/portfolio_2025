@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PremiumBackground } from "@/components/premium-background";
 import { AboutSkeleton } from "@/components/skeleton";
+import { Instagram, Linkedin, Github } from "lucide-react"
 
 export default function About() {
   const [loading, setLoading] = useState(true);
@@ -174,6 +175,37 @@ export default function About() {
                   {skill}
                 </Badge>
               ))}
+            </div>
+          </div>
+          <div className="mt-10">
+            <h2 className="text-3xl font-bold mb-6 text-white">
+              Connect with Me
+            </h2>
+            <div className="flex gap-4">
+              <a
+                href="https://www.instagram.com/gorillaworkout"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black/30 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-black/40 hover:border-white/30 transition-all duration-300"
+              >
+                <Instagram className="h-6 w-6 text-white" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/gorillaworkout"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black/30 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-black/40 hover:border-white/30 transition-all duration-300"
+              >
+                <Linkedin className="h-6 w-6 text-white" />
+              </a>
+              <a
+                href="https://www.github.com/gorillaworkout"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black/30 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-black/40 hover:border-white/30 transition-all duration-300"
+              >
+                <Github className="h-6 w-6 text-white" />
+              </a>
             </div>
           </div>
         </div>
