@@ -19,6 +19,26 @@ export default function Work() {
 
   const projects = [
     {
+      title: "Indonesian Cheer Association",
+      description:
+       "Indonesian Cheer Association (ICA) is the national governing body for cheerleading in Indonesia, officially recognized by the International Cheer Union (ICU) and KORMI since 2008–2009.",
+      image: "/images/ica-rounded.webp",
+      technologies: ["Next JS", "Tailwind CSS","Firebase", "Firestore", "Oauth"],
+      liveUrl: "https://www.indonesiancheer.org",
+      githubUrl: "https://github.com/gorillaworkout",
+      featured: false,
+    },
+    {
+      title: "HSSP Law firm",
+      description:
+       "HSS Partners Law Firm (hssplawfirm.com) is a leading Indonesian legal practice with over 20 years of experience. Established in 1995, the firm delivers a full spectrum of legal services,",
+      image: "/images/logo_hssplaw.png",
+      technologies: ["Next JS", "Tailwind CSS","Firebase", "Firestore", "Oauth"],
+      liveUrl: "https://www.hssplawfirm.com/",
+      githubUrl: "https://github.com/gorillaworkout",
+      featured: false,
+    },
+    {
       title: "Shinta VR analytics",
       description:
         "Millealab Analytics is a dashboard that visualizes student engagement and VR learning activity in real time, helping educators monitor and improve digital learning experiences.",
