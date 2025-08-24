@@ -19,6 +19,26 @@ export default function Work() {
 
   const projects = [
     {
+      title: "Jastip di GW",
+      description:
+       "Titip barang dari Indonesia ke Jepang dan sebaliknya, atau kami bantu checkout dari marketplace Jepang. Harga jujur, update real-time, pengiriman rapi.",
+      image: "/images/jastipdigw.png",
+      technologies: ["Next JS", "Tailwind CSS","Firebase", "Firestore", "Oauth"],
+      liveUrl: "https://www.jastipdigw.gorillaworkout.id",
+      githubUrl: "https://github.com/gorillaworkout/gorilla-jastip",
+      featured: false,
+    },
+    {
+      title: "Gorilla Stunter",
+      description:
+       "We are an elite cheerleading stunt partner community that brings together the most dedicated athletes who share a passion for precision, excellence, and the art of cheerleading stunts.",
+      image: "/images/new_gs_4.png",
+      technologies: ["Next JS", "Tailwind CSS","Firebase", "Firestore", "Oauth"],
+      liveUrl: "https://www.gorillastunter.gorillaworkout.id",
+      githubUrl: "https://github.com/gorillaworkout/gorilla-stunter",
+      featured: false,
+    },
+    {
       title: "Indonesian Cheer Association",
       description:
        "Indonesian Cheer Association (ICA) is the national governing body for cheerleading in Indonesia, officially recognized by the International Cheer Union (ICU) and KORMI since 2008–2009.",
