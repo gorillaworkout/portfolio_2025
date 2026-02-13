@@ -18,6 +18,19 @@ export async function GET(request: NextRequest) {
   const error = url.searchParams.get("error")
   const errorDescription = url.searchParams.get("error_description")
 
+  // Kalau diakses langsung tanpa query apa pun (misalnya test via browser),
+  // kembalikan respons sederhana agar mudah cek bahwa API hidup.
+  if (!code && !error && !state && !errorDescription) {
+    return NextResponse.json(
+      {
+        success: true,
+        message: "Xero callback endpoint aktif. Tambahkan ?code=... dari Xero untuk menukar token.",
+        endpoint: "/uri",
+      },
+      { status: 200 },
+    )
+  }
+
   if (error) {
     return NextResponse.json(
       {
