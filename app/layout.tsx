@@ -11,21 +11,33 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Gorilla Workout - Front End Developer Portfolio",
+    default: "Gorilla Workout - Front End Developer Portfolio | Indonesia",
     template: "%s | Gorilla Workout",
   },
   description:
-    "Professional Front End Developer specializing in React, Next.js, Node.js, and modern web technologies. Creating exceptional digital experiences with cutting-edge solutions.",
+    "Gorilla Workout - Professional Front End Developer in Indonesia specializing in React, Next.js, Node.js, and modern web technologies. Hire me for your next project!",
   keywords: [
-    "Front End Developer",
-    "React Developer",
+    "Gorilla Workout",
+    "gorillaworkout",
+    "Gorilla Workout Portfolio",
+    "Gorilla Workout Indonesia",
+    "Gorilla Workout Developer",
+    "Front End Developer Indonesia",
+    "React Developer Indonesia",
     "Next.js Developer",
     "Node.js Developer",
     "Web Development",
     "JavaScript",
     "TypeScript",
-    "Portfolio",
-    "Gorilla Workout",
+    "Portfolio Developer",
+    "Full Stack Developer",
+    "Web Developer Jakarta",
+    "jasa website",
+    "pembuat website",
+    "developer Indonesia",
+    "frontend specialist",
+    "react specialist",
+    "nextjs expert",
   ],
   authors: [{ name: "Gorilla Workout", url: "https://gorillaworkout.id" }],
   creator: "Gorilla Workout",
@@ -38,41 +50,47 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://gorillaworkout.id"),
   alternates: {
     canonical: "/",
+    languages: {
+      "en-US": "/",
+      "id-ID": "/",
+    },
   },
   icons: {
-    icon: "/images/gorillalogops.png", // favicon utama
-    shortcut: "/images/gorillalogops.png", // favicon shortcut
-    apple: "/images/gorillalogops.png", // apple touch icon (untuk iOS)
+    icon: "/images/gorillalogops.png",
+    shortcut: "/images/gorillalogops.png",
+    apple: "/images/gorillalogops.png",
   },
+  manifest: "/site.webmanifest",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://gorillaworkout.id",
-    title: "Gorilla Workout - Front End Developer Portfolio",
+    title: "Gorilla Workout - Front End Developer Portfolio | Indonesia",
     description:
-      "Professional Front End Developer specializing in React, Next.js, Node.js, and modern web technologies.",
+      "Professional Front End Developer specializing in React, Next.js, Node.js, and modern web technologies. Based in Indonesia, available worldwide.",
     siteName: "Gorilla Workout Portfolio",
     images: [
       {
         url: "/images/gorillalogops.png",
-        width: 800,
-        height: 600,
-        alt: "Gorilla Workout Logo",
+        width: 1200,
+        height: 630,
+        alt: "Gorilla Workout - Front End Developer Portfolio Indonesia",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gorilla Workout - Front End Developer Portfolio",
+    title: "Gorilla Workout - Front End Developer Portfolio | Indonesia",
     description:
       "Professional Front End Developer specializing in React, Next.js, Node.js, and modern web technologies.",
     creator: "@gorillaworkout",
+    site: "@gorillaworkout",
     images: ["/images/gorillalogops.png"],
   },
   robots: {
     index: true,
     follow: true,
-    nocache: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
@@ -82,7 +100,19 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  generator: "gorillaworkout",
+  generator: "Next.js",
+  applicationName: "Gorilla Workout Portfolio",
+  referrer: "origin-when-cross-origin",
+  verification: {
+    google: "JHMIvrDote4BARD1JBrp8AkIcxTESu7CRSE7kTshP4E",
+    yandex: "YANDEX_VERIFICATION_CODE_HERE",
+    yahoo: "YAHOO_VERIFICATION_CODE_HERE",
+    other: {
+      me: ["https://instagram.com/gorillaworkout", "https://github.com/gorillaworkout"],
+    },
+  },
+  category: "technology",
+  classification: "Developer Portfolio",
 }
 
 

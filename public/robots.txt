@@ -1,0 +1,60 @@
+# Gorilla Workout - Portfolio Website
+# Optimized for Google, Bing, and other search engines
+
+User-agent: *
+Allow: /
+
+# Allow all bots to crawl everything
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /fonts/
+Allow: /_next/
+Allow: /static/
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/static/chunks/pages/_app-*.js
+Disallow: /_next/static/chunks/pages/_error-*.js
+
+# Crawl-delay for rate limiting (respectful crawling)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://gorillaworkout.id/sitemap.xml
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Googlebot-Image (for image search)
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
+
+# Baiduspider (Chinese search engine)
+User-agent: Baiduspider
+Allow: /
+
+# Yandex (Russian search engine)
+User-agent: Yandex
+Allow: /
+
+# Yahoo Slurp
+User-agent: Slurp
+Allow: /
+
+# Host directive (for Yandex)
+Host: gorillaworkout.id
