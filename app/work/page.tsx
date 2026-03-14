@@ -19,94 +19,13 @@ export default function Work() {
 
   const projects = [
     {
-      title: "Jastip di GW",
+      title: "Dupoin Dashboard",
       description:
-       "Titip barang dari Indonesia ke Jepang dan sebaliknya, atau kami bantu checkout dari marketplace Jepang. Harga jujur, update real-time, pengiriman rapi.",
-      image: "/images/jastipdigw.png",
-      technologies: ["Next JS", "Tailwind CSS","Firebase", "Firestore", "Oauth"],
-      liveUrl: "https://www.jastipdigw.gorillaworkout.id",
-      githubUrl: "https://github.com/gorillaworkout/gorilla-jastip",
-      featured: false,
-    },
-    {
-      title: "Gorilla Stunter",
-      description:
-       "We are an elite cheerleading stunt partner community that brings together the most dedicated athletes who share a passion for precision, excellence, and the art of cheerleading stunts.",
-      image: "/images/new_gs_4.png",
-      technologies: ["Next JS", "Tailwind CSS","Firebase", "Firestore", "Oauth"],
-      liveUrl: "https://www.gorillastunter.gorillaworkout.id",
-      githubUrl: "https://github.com/gorillaworkout/gorilla-stunter",
-      featured: false,
-    },
-    {
-      title: "Indonesian Cheer Association",
-      description:
-       "Indonesian Cheer Association (ICA) is the national governing body for cheerleading in Indonesia, officially recognized by the International Cheer Union (ICU) and KORMI since 2008–2009.",
-      image: "/images/ica-rounded.webp",
-      technologies: ["Next JS", "Tailwind CSS","Firebase", "Firestore", "Oauth"],
-      liveUrl: "https://www.indonesiancheer.org",
-      githubUrl: "https://github.com/gorillaworkout",
-      featured: false,
-    },
-    {
-      title: "HSSP Law firm",
-      description:
-       "HSS Partners Law Firm (hssplawfirm.com) is a leading Indonesian legal practice with over 20 years of experience. Established in 1995, the firm delivers a full spectrum of legal services,",
-      image: "/images/logo_hssplaw.png",
-      technologies: ["Next JS", "Tailwind CSS","Firebase", "Firestore", "Oauth"],
-      liveUrl: "https://www.hssplawfirm.com/",
-      githubUrl: "https://github.com/gorillaworkout",
-      featured: false,
-    },
-    {
-      title: "Shinta VR analytics",
-      description:
-        "Millealab Analytics is a dashboard that visualizes student engagement and VR learning activity in real time, helping educators monitor and improve digital learning experiences.",
-      image: "/images/shinta_vr.jpg",
-      technologies: ["Vue.js", "Vuex", "Midtrans", "SCSS", "AXIOS", "Tailwind CSS","Firebase", "Firestore"],
-      liveUrl: "https://millealab-analytics.firebaseapp.com/",
-      githubUrl: "https://github.com/gorillaworkout",
-      featured: false,
-    },
-    {
-      title: "Rumah Siap Kerja",
-      description:
-        "Rumah Siap Kerja is a career development platform that empowers young Indonesians with skills training, job opportunities, and mentorship to succeed in the workforce.",
-      image: "/images/rsk_2.webp",
-      technologies: ["Vue.js","Nuxt 3", "Pinia", "AXIOS", "Tailwind CSS",],
-      liveUrl: "https://rumahsiapkerja.com/",
-      githubUrl: "https://github.com/gorillaworkout",
-      featured: false,
-    },
-    
-    {
-      title: "Pokecoy",
-      description:
-        "A simple and interactive Pokédex app showcasing Pokémon data and details using a clean user interface.",
-      image: "/images/pokecoy.png",
-      technologies: ["React JS", "Redux", "Bootstrap", "Axios", "PokéAPI", "Vercel"],
-      liveUrl: "https://pokedexorange.vercel.app",
-      githubUrl: "https://github.com/gorillaworkout/pokecoy",
-      featured: false,
-    },
-    {
-      title: "Shinta VR License",
-      description:
-        "Millealab License Portal allows schools and institutions to manage their VR learning licenses, monitor usage, and activate access seamlessly.",
-      image: "/images/shinta_vr.jpg",
-      technologies: ["Vue.js", "Vuex", "Midtrans", "SCSS", "AXIOS", "Tailwind CSS","Firebase", "Firestore"],
-      liveUrl: "https://license.millealab.com/",
-      githubUrl: "https://github.com/gorillaworkout",
-      featured: false,
-    },
-    {
-      title: "My Digilearn",
-      description:
-        "MyDigiLearn is an Indonesian e-learning platform offering digital courses and skill development for students and professionals.",
-      image: "/images/mydg.png",
-      technologies: ["Vue 2", "Vuex", "AXIOS", "Tailwind CSS", "Next JS", "Jest", "SonarCube"],
-      liveUrl: "https://mydigilearn.id/",
-      githubUrl: "https://github.com/gorillaworkout",
+        "Enterprise HR & Finance dashboard integrating Lark Base and Xero accounting. Features real-time data sync, interactive charts (amCharts, Recharts), CSV bulk import, Sankey diagrams, and multi-level financial reporting.",
+      image: "/images/dupoin-dashboard.jpg",
+      technologies: ["Next.js", "PostgreSQL", "Prisma", "Docker", "Lark API", "Xero API", "amCharts 5", "Tailwind CSS"],
+      liveUrl: "https://hr-app.gorillaworkout.id",
+      githubUrl: "https://github.com/gorillaworkout/dupoin_sheet_converter",
       featured: false,
     },
     {
@@ -114,7 +33,7 @@ export default function Work() {
       description:
         "Van Wijnen is a Dutch construction and real estate company focused on building sustainable homes, neighborhoods, and communities.",
       image: "/images/Van-Wijnen.svg",
-      technologies: ["Next.js", "Storybook","Sitecore", "Tailwind CSS", "Typescript", "Azure Storage",  ],
+      technologies: ["Next.js", "Storybook", "Sitecore", "Tailwind CSS", "TypeScript", "Azure Storage"],
       liveUrl: "https://www.vanwijnen.nl/",
       githubUrl: "https://github.com",
       featured: true,
@@ -124,10 +43,130 @@ export default function Work() {
       description:
         "GorillaTix is an online ticketing platform that allows users to discover, book, and securely pay for events in Indonesia.",
       image: "/images/gtix_red.webp",
-      technologies: ["Next.js", "Tailwind CSS", "Typescript", "Firestore", "Firebase Storage", "Firebase Auth", "Upstash Redis", "Google Analytics", "Vercel", "Midtrans", "Zod"],
+      technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Firestore", "Firebase Auth", "Upstash Redis", "Midtrans", "Zod"],
       liveUrl: "https://www.gorillatix.com",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/gorillaworkout/gorillatix",
+      featured: false,
+    },
+    {
+      title: "Indonesian Cheer Association",
+      description:
+        "Official website for Indonesian Cheer Association (ICA), the national governing body for cheerleading in Indonesia. Features athlete registration, competition management, judge scoring, and news updates.",
+      image: "/images/ica-rounded.webp",
+      technologies: ["Next.js 15", "Supabase", "Redux Toolkit", "Tailwind CSS", "TypeScript", "Vercel"],
+      liveUrl: "https://www.indonesiancheer.org",
+      githubUrl: "https://github.com/gorillaworkout/ica_cheerleading_indonesia",
       featured: true,
+    },
+    {
+      title: "Crown Allstar",
+      description:
+        "Website for Crown Allstar cheerleading team featuring dynamic animations, team showcase, and event information with smooth scroll experiences.",
+      image: "/images/crown_allstar.webp",
+      technologies: ["Next.js", "GSAP", "Framer Motion", "Tailwind CSS", "Embla Carousel"],
+      liveUrl: "https://crown-allstar-neon.vercel.app",
+      githubUrl: "https://github.com/gorillaworkout/crown_allstar",
+      featured: false,
+    },
+    {
+      title: "Undangan Nikah",
+      description:
+        "A wedding invitation SaaS platform with beautiful 3D animations, RSVP management, and customizable themes. Built with Three.js for immersive visual experiences.",
+      image: "/images/undangan-nikah.webp",
+      technologies: ["Next.js", "Three.js", "React Three Fiber", "Supabase", "Framer Motion", "Zustand"],
+      liveUrl: "https://undangan-nikah.vercel.app",
+      githubUrl: "https://github.com/gorillaworkout/undangan-nikah",
+      featured: true,
+    },
+    {
+      title: "Launchpad",
+      description:
+        "DevOps deploy dashboard for managing VPS projects. Features one-click rebuild with real-time SSE build logs, project status monitoring, and Docker container management.",
+      image: "/images/undangan-nikah.webp",
+      technologies: ["Next.js", "PM2", "Docker", "SSE", "Tailwind CSS", "TypeScript"],
+      liveUrl: "https://launchpad.gorillaworkout.id",
+      githubUrl: "https://github.com/gorillaworkout",
+      featured: false,
+    },
+    {
+      title: "CatatanDiGW",
+      description:
+        "A Progressive Web App (PWA) for personal note-taking and daily journaling with offline support, dark mode, and data visualization using charts.",
+      image: "/images/catatdigw.png",
+      technologies: ["Next.js", "Firebase", "PWA", "Recharts", "Framer Motion", "Tailwind CSS"],
+      liveUrl: "https://catatdigw.vercel.app",
+      githubUrl: "https://github.com/gorillaworkout/catatdigw",
+      featured: false,
+    },
+    {
+      title: "Jastip di GW",
+      description:
+       "Titip barang dari Indonesia ke Jepang dan sebaliknya, atau kami bantu checkout dari marketplace Jepang. Harga jujur, update real-time, pengiriman rapi.",
+      image: "/images/jastipdigw.png",
+      technologies: ["Next.js", "Tailwind CSS", "Firebase", "Firestore", "OAuth"],
+      liveUrl: "https://www.jastipdigw.gorillaworkout.id",
+      githubUrl: "https://github.com/gorillaworkout/gorilla-jastip",
+      featured: false,
+    },
+    {
+      title: "Gorilla Stunter",
+      description:
+       "Elite cheerleading stunt partner community bringing together dedicated athletes who share a passion for precision, excellence, and the art of cheerleading stunts.",
+      image: "/images/new_gs_4.png",
+      technologies: ["Next.js", "Tailwind CSS", "Firebase", "Firestore", "OAuth"],
+      liveUrl: "https://www.gorillastunter.gorillaworkout.id",
+      githubUrl: "https://github.com/gorillaworkout/gorilla-stunter",
+      featured: false,
+    },
+    {
+      title: "HSSP Law Firm",
+      description:
+       "Professional website for HSS Partners Law Firm with over 20 years of experience, delivering a full spectrum of legal services across Indonesia.",
+      image: "/images/logo_hssplaw.png",
+      technologies: ["Next.js", "Tailwind CSS", "Firebase", "Framer Motion"],
+      liveUrl: "https://www.hssplawfirm.com/",
+      githubUrl: "https://github.com/gorillaworkout/hssplaw",
+      featured: false,
+    },
+    {
+      title: "Shinta VR Analytics",
+      description:
+        "Dashboard visualizing student engagement and VR learning activity in real time, helping educators monitor and improve digital learning experiences.",
+      image: "/images/shinta_vr.jpg",
+      technologies: ["Vue.js", "Vuex", "Midtrans", "SCSS", "Tailwind CSS", "Firebase"],
+      liveUrl: "https://millealab-analytics.firebaseapp.com/",
+      githubUrl: "https://github.com/gorillaworkout",
+      featured: false,
+    },
+    {
+      title: "Rumah Siap Kerja",
+      description:
+        "Career development platform empowering young Indonesians with skills training, job opportunities, and mentorship to succeed in the workforce.",
+      image: "/images/rsk_2.webp",
+      technologies: ["Vue.js", "Nuxt 3", "Pinia", "Axios", "Tailwind CSS"],
+      liveUrl: "https://rumahsiapkerja.com/",
+      githubUrl: "https://github.com/gorillaworkout",
+      featured: false,
+    },
+    {
+      title: "Shinta VR License",
+      description:
+        "License management portal for schools and institutions to manage VR learning licenses, monitor usage, and activate access seamlessly.",
+      image: "/images/shinta_vr.jpg",
+      technologies: ["Vue.js", "Vuex", "Midtrans", "SCSS", "Tailwind CSS", "Firebase"],
+      liveUrl: "https://license.millealab.com/",
+      githubUrl: "https://github.com/gorillaworkout",
+      featured: false,
+    },
+    {
+      title: "My Digilearn",
+      description:
+        "Indonesian e-learning platform offering digital courses and skill development for students and professionals.",
+      image: "/images/mydg.png",
+      technologies: ["Vue 2", "Vuex", "Axios", "Tailwind CSS", "Jest", "SonarQube"],
+      liveUrl: "https://mydigilearn.id/",
+      githubUrl: "https://github.com/gorillaworkout",
+      featured: false,
     },
   ]
 
@@ -244,7 +283,7 @@ export default function Work() {
             }`}
           >
             {otherProjects.map((project, index) => (
-              <ProjectCard key={project.title} project={project} index={index + featuredProjects.length} />
+              <ProjectCard key={project.title} project={project} index={index + featuredProjects.length} viewMode={viewMode} />
             ))}
           </div>
         </div>

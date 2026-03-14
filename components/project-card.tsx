@@ -18,22 +18,24 @@ interface ProjectCardProps {
     featured?: boolean
   }
   index: number
+  viewMode?: "grid" | "list"
 }
 
-export function ProjectCard({ project, index }: ProjectCardProps) {
+export function ProjectCard({ project, index, viewMode = "grid" }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false)
+  const isList = viewMode === "list"
 
   return (
     <div className="group relative" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-      <Card className="relative bg-black/40 backdrop-blur-xl border border-white/10 overflow-hidden rounded-2xl group-hover:border-white/20 transition-all duration-300 transform group-hover:-translate-y-1">
+      <Card className={`relative bg-black/40 backdrop-blur-xl border border-white/10 overflow-hidden rounded-2xl group-hover:border-white/20 transition-all duration-300 transform group-hover:-translate-y-1 ${isList ? "flex flex-row" : ""}`}>
         {/* Image Section */}
-        <div className="relative overflow-hidden">
+        <div className={`relative overflow-hidden ${isList ? "w-48 min-h-full flex-shrink-0" : ""}`}>
           <Image
             src={project.image || "/placeholder.svg"}
             alt={project.title}
             width={600}
             height={400}
-            className="w-full h-64 object-cover transition-all duration-500 group-hover:scale-105"
+            className={`object-cover transition-all duration-500 group-hover:scale-105 ${isList ? "w-48 h-full" : "w-full h-64"}`}
           />
 
           {/* Simple overlay on hover */}
@@ -41,7 +43,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             className={`absolute inset-0 bg-black/60 transition-opacity duration-300 ${isHovered ? "opacity-100" : "opacity-0"}`}
           >
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="flex space-x-4">
+              <div className={`flex ${isList ? "flex-col space-y-2" : "space-x-4"}`}>
                 <Button
                   size="sm"
                   className="bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 text-white"
@@ -76,19 +78,19 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
 
         {/* Content Section */}
-        <CardContent className="p-6 space-y-4">
+        <CardContent className={`space-y-4 ${isList ? "p-5 flex-1" : "p-6"}`}>
           <div className="flex items-start justify-between">
-            <h3 className="text-xl font-bold text-white group-hover:text-gray-200 transition-colors">
+            <h3 className={`font-bold text-white group-hover:text-gray-200 transition-colors ${isList ? "text-lg" : "text-xl"}`}>
               {project.title}
             </h3>
             <ArrowUpRight className="h-5 w-5 text-white/60 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
           </div>
 
-          <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">{project.description}</p>
+          <p className={`text-gray-400 text-sm leading-relaxed ${isList ? "line-clamp-2" : "line-clamp-3"}`}>{project.description}</p>
 
           {/* Technologies */}
           <div className="flex flex-wrap gap-2">
-            {project.technologies.slice(0, 4).map((tech) => (
+            {project.technologies.slice(0, isList ? 6 : 4).map((tech) => (
               <Badge
                 key={tech}
                 variant="secondary"
@@ -97,12 +99,28 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                 {tech}
               </Badge>
             ))}
-            {project.technologies.length > 4 && (
+            {project.technologies.length > (isList ? 6 : 4) && (
               <Badge variant="secondary" className="bg-white/5 text-white/60 border border-white/10 text-xs px-3 py-1">
-                +{project.technologies.length - 4}
+                +{project.technologies.length - (isList ? 6 : 4)}
               </Badge>
             )}
           </div>
+
+          {/* List mode: show action buttons inline */}
+          {isList && (
+            <div className="flex gap-3 pt-1">
+              <Button size="sm" className="bg-white/10 hover:bg-white/20 text-white text-xs" asChild>
+                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="h-3 w-3 mr-1" /> Demo
+                </a>
+              </Button>
+              <Button size="sm" variant="outline" className="border-white/20 hover:bg-white/10 text-white text-xs" asChild>
+                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                  <Github className="h-3 w-3 mr-1" /> Code
+                </a>
+              </Button>
+            </div>
+          )}
         </CardContent>
       </Card>
     </div>
