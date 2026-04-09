@@ -7,22 +7,24 @@ const QISCUS_APP_ID = "ramo-29lun8b1ulepsaio"
 export function QiscusWidget() {
   useEffect(() => {
     // Prevent double-init in strict mode
-    if (document.getElementById("qismo-script")) return
+    if (document.getElementById("qismo-widget-script")) return
 
-    // Create the Qiscus Multichannel Widget script
+    // Load Qismo v2 widget script
     const script = document.createElement("script")
-    script.id = "qismo-script"
-    script.src = `https://multichannel.qiscus.com/qismo-widget.js?app_id=${QISCUS_APP_ID}`
+    script.id = "qismo-widget-script"
+    script.src = "https://s3-ap-southeast-1.amazonaws.com/qiscus-sdk/public/qismo/qismo-v2.js"
     script.async = true
-    script.defer = true
+    script.onload = () => {
+      // Initialize Qismo after script loads
+      if (typeof (window as any).Qismo !== "undefined") {
+        new (window as any).Qismo(QISCUS_APP_ID)
+      }
+    }
     document.body.appendChild(script)
 
     return () => {
-      // Cleanup on unmount
-      const existingScript = document.getElementById("qismo-script")
-      if (existingScript) {
-        existingScript.remove()
-      }
+      const existingScript = document.getElementById("qismo-widget-script")
+      if (existingScript) existingScript.remove()
     }
   }, [])
 
