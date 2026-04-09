@@ -6,7 +6,6 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Navigation } from "@/components/navigation"
 import { Toaster } from "@/components/ui/toaster"
 import { ErrorBoundary } from "@/components/error-boundary"
-import { QiscusWidget } from "@/components/qiscus-widget"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -135,7 +134,6 @@ export default function RootLayout({
               <Navigation />
               <main className="pt-20">{children}</main>
               <Toaster />
-              <QiscusWidget />
             </div>
           </ThemeProvider>
         </ErrorBoundary>
